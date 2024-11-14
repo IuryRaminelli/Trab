@@ -7,6 +7,20 @@
 </head>
 <body>
     <h1>Tópicos em Sistemas para Versionamento e Gestão de Dependências (GIT)</h1>
-    <h3>Descrição....</h3>
+    <h3 id="description">Descrição...</h3>
+    <button class="btn" id="showInfoBtn">Mostrar Mais Informações</button>
+
+    <script>
+        const description = document.getElementById('description');
+        const showInfoBtn = document.getElementById('showInfoBtn');
+
+        function showMoreInfo() {
+            description.textContent = "GIT é um sistema de controle de versão distribuído, amplamente utilizado para gerenciar o histórico de projetos de software.";
+
+            alert("GIT permite versionar projetos e colaborar com outros desenvolvedores de forma eficiente!");
+        }
+
+        showInfoBtn.addEventListener('click', showMoreInfo);
+    </script>
 </body>
 </html>
